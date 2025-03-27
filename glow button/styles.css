@@ -1,0 +1,40 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the button */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(9, 0, 0);
+}
+
+/* Container for the button */
+.container {
+    text-align: center;
+}
+
+/* Styling the button */
+.glow-button {
+    font-size: 20px;
+    padding: 15px 40px;
+    color: white;
+    background: #0f0e0e;
+    border: 2px solid cyan;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glowing effect on hover */
+.glow-button:hover {
+    box-shadow: 0 0 15px cyan, 0 0 40px cyan, 0 0 80px cyan;
+    transform: scale(1.1);
+    border-color: white;
+}
